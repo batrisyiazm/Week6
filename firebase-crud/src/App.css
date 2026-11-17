@@ -1,0 +1,132 @@
+
+/* General page */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #FFF5F7;
+    margin: 0;
+    min-height: 100vh;
+    color: #76566A;
+}
+
+/* Main container */
+.container {
+    max-width: 650px;
+    margin: 60px auto;
+    padding: 35px;
+    background: #FFFFFF;
+    border: 2px solid #F8DDE5;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(190, 130, 155, 0.12);
+    text-align: center;
+}
+
+/* Main heading */
+h1 {
+    color: #C77D9B;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Section headings */
+h2 {
+    color: #B77A98;
+    font-size: 23px;
+    margin-top: 25px;
+}
+
+/* Welcome message */
+p {
+    color: #9B8292;
+    font-size: 17px;
+}
+
+/* Input field */
+input {
+    padding: 13px 16px;
+    margin: 5px;
+    border: 2px solid #F2D5E0;
+    border-radius: 12px;
+    background: #FFFAFC;
+    color: #76566A;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #D99AB5;
+    box-shadow: 0 0 0 3px rgba(217, 154, 181, 0.15);
+}
+
+input::placeholder {
+    color: #BDA6B3;
+}
+
+/* Buttons */
+button {
+    padding: 12px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 12px;
+    background: #E9DDF8;
+    color: #795D91;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    background: #D8C4EF;
+    transform: translateY(-2px);
+}
+
+/* Task cards */
+.task {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px;
+    margin: 12px 0;
+    background: #FFF5F8;
+    border: 1px solid #F5DFE8;
+    border-radius: 14px;
+    color: #76566A;
+    box-shadow: 0 3px 8px rgba(190, 130, 155, 0.08);
+}
+
+.task span {
+    flex: 1;
+    text-align: left;
+}
+
+/* Completed tasks */
+.completed {
+    text-decoration: line-through;
+    color: #B9A6B1;
+}
+
+/* Logout button */
+button.logout {
+    background: #F8DDE5;
+    color: #A45E7B;
+}
+
+button.logout:hover {
+    background: #F1C5D5;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        margin: 25px 15px;
+        padding: 22px;
+    }
+
+    h1 {
+        font-size: 29px;
+    }
+
+    input {
+        max-width: 90%;
+    }
+}
